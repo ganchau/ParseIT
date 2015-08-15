@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'ParseIT' do
+  pod 'ParseUI', '~> 1.1'
+  pod 'Parse', '~> 1.8'
+end
+
+target 'ParseITTests' do
+
+end
+

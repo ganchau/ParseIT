@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50FE4FFF10CA5ACA7F191C0B /* libPods-ParseIT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204E04BE1993E8678A34314F /* libPods-ParseIT.a */; };
 		BD2F86B51B7F77E800E231F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86B41B7F77E800E231F1 /* main.m */; };
 		BD2F86B81B7F77E800E231F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86B71B7F77E800E231F1 /* AppDelegate.m */; };
 		BD2F86BB1B7F77E800E231F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86BA1B7F77E800E231F1 /* ViewController.m */; };
@@ -14,7 +15,7 @@
 		BD2F86C01B7F77E800E231F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2F86BF1B7F77E800E231F1 /* Images.xcassets */; };
 		BD2F86C31B7F77E800E231F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD2F86C11B7F77E800E231F1 /* LaunchScreen.xib */; };
 		BD2F86CF1B7F77E800E231F1 /* ParseITTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86CE1B7F77E800E231F1 /* ParseITTests.m */; };
-		BD2F86DA1B7F785000E231F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86D91B7F785000E231F1 /* Constants.m */; };
+		BD2F86DD1B7F816E00E231F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F86DC1B7F816E00E231F1 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204E04BE1993E8678A34314F /* libPods-ParseIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseIT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D8C264081C26696D81526D /* Pods-ParseIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseIT.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseIT/Pods-ParseIT.release.xcconfig"; sourceTree = "<group>"; };
+		64F3DE391860C7287A2EBA27 /* Pods-ParseIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseIT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseIT/Pods-ParseIT.debug.xcconfig"; sourceTree = "<group>"; };
 		BD2F86AF1B7F77E800E231F1 /* ParseIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2F86B31B7F77E800E231F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD2F86B41B7F77E800E231F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +45,8 @@
 		BD2F86C81B7F77E800E231F1 /* ParseITTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseITTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2F86CD1B7F77E800E231F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD2F86CE1B7F77E800E231F1 /* ParseITTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseITTests.m; sourceTree = "<group>"; };
-		BD2F86D81B7F785000E231F1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ParseIT/Constants.h; sourceTree = "<group>"; };
-		BD2F86D91B7F785000E231F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ParseIT/Constants.m; sourceTree = "<group>"; };
+		BD2F86DB1B7F816E00E231F1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BD2F86DC1B7F816E00E231F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FE4FFF10CA5ACA7F191C0B /* libPods-ParseIT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,14 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C6E2CE3448026122CE5CFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				204E04BE1993E8678A34314F /* libPods-ParseIT.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD2F86A61B7F77E800E231F1 = {
 			isa = PBXGroup;
 			children = (
-				BD2F86D81B7F785000E231F1 /* Constants.h */,
-				BD2F86D91B7F785000E231F1 /* Constants.m */,
 				BD2F86B11B7F77E800E231F1 /* ParseIT */,
 				BD2F86CB1B7F77E800E231F1 /* ParseITTests */,
 				BD2F86B01B7F77E800E231F1 /* Products */,
+				D441E374590587587D87C2FF /* Pods */,
+				4C6E2CE3448026122CE5CFFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +107,8 @@
 				BD2F86BF1B7F77E800E231F1 /* Images.xcassets */,
 				BD2F86C11B7F77E800E231F1 /* LaunchScreen.xib */,
 				BD2F86B21B7F77E800E231F1 /* Supporting Files */,
+				BD2F86DB1B7F816E00E231F1 /* Constants.h */,
+				BD2F86DC1B7F816E00E231F1 /* Constants.m */,
 			);
 			path = ParseIT;
 			sourceTree = "<group>";
@@ -124,6 +139,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D441E374590587587D87C2FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64F3DE391860C7287A2EBA27 /* Pods-ParseIT.debug.xcconfig */,
+				25D8C264081C26696D81526D /* Pods-ParseIT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD2F86D21B7F77E800E231F1 /* Build configuration list for PBXNativeTarget "ParseIT" */;
 			buildPhases = (
+				1EE6F760113AC405863E3181 /* Check Pods Manifest.lock */,
 				BD2F86AB1B7F77E800E231F1 /* Sources */,
 				BD2F86AC1B7F77E800E231F1 /* Frameworks */,
 				BD2F86AD1B7F77E800E231F1 /* Resources */,
+				93E8286974F9BF00204DB98A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +245,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EE6F760113AC405863E3181 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93E8286974F9BF00204DB98A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseIT/Pods-ParseIT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD2F86AB1B7F77E800E231F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -227,7 +286,7 @@
 				BD2F86BB1B7F77E800E231F1 /* ViewController.m in Sources */,
 				BD2F86B81B7F77E800E231F1 /* AppDelegate.m in Sources */,
 				BD2F86B51B7F77E800E231F1 /* main.m in Sources */,
-				BD2F86DA1B7F785000E231F1 /* Constants.m in Sources */,
+				BD2F86DD1B7F816E00E231F1 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +412,7 @@
 		};
 		BD2F86D31B7F77E800E231F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F3DE391860C7287A2EBA27 /* Pods-ParseIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseIT/Info.plist;
@@ -363,6 +423,7 @@
 		};
 		BD2F86D41B7F77E800E231F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D8C264081C26696D81526D /* Pods-ParseIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseIT/Info.plist;
@@ -424,6 +485,7 @@
 				BD2F86D41B7F77E800E231F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD2F86D51B7F77E800E231F1 /* Build configuration list for PBXNativeTarget "ParseITTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +494,7 @@
 				BD2F86D71B7F77E800E231F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
